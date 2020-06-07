@@ -1,7 +1,9 @@
 Timelines
 =========
 
-Create downloadable SVG diagrams of interdependent timelines derived from a YAML model.
+Simple way to create downloadable SVG diagrams of interdependent timelines derived from a YAML model.
+
+Try it online: https://bernardtsai.github.io/timelines/
 
 Features
 --------
