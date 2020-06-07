@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Timelines generator">
+  <meta name="author" content="Bernard Tsai (mailto:bernard@tsai.eu)">
+
+  <title>&mdash;&mdash; timelines &mdash;&mdash;&rtrif; </title>
+
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div id="editor">
+    <div id="editorTitle">Input:</div>
+    <div id="data">
+      <textarea id="model"></textarea>
+    </div>
+    <div id="editorButton">RENDER</div>
+  </div>
+  <div id="output">
+    <div id="outputTitle">Output:</div>
+    <div id="outputText"><pre id="outputMessage"></pre>Timelines by Bernard Tsai</div>
+    <div id="outputCanvas">
+      <svg xmlns="http://www.w3.org/2000/svg">
+          <text x="10" y="10" font-size="10">Timelines by Bernard Tsai</text>
+      </svg>
+    </div>
+    <div id="outputButton">SAVE</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.0/js-yaml.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
