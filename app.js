@@ -155,6 +155,22 @@ function highlightLine(line) {
 
 //------------------------------------------------------------------------------
 
+// toggleOutput: resize the ouput area
+function toggleOutput() {
+  var input  = document.getElementById("editor")
+  var output = document.getElementById("output")
+
+  if ( output.classList.contains("full") ) {
+    output.classList.remove("full")
+    input.classList.remove("hide")
+  } else {
+    output.classList.add("full")
+    input.classList.add("hide")
+  }
+}
+
+//------------------------------------------------------------------------------
+
 // calculateCanvasDimensions: determines the dimensions of the canvas
 function calculateCanvasDimensions() {
   calculateCanvasDimensionsBasedOnMonths()
@@ -610,5 +626,5 @@ function editor() {
 
 // register handlers
 document.getElementById("editorButton").addEventListener("click", render);
-document.getElementById("outputCanvas").addEventListener("click", editor);
 document.getElementById("outputButton").addEventListener("click", save);
+document.getElementById("outputCanvas").addEventListener("click", toggleOutput);

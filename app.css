@@ -23,6 +23,14 @@ body {
   background-color: white;
 }
 
+#editor.full {
+  width:    100%;
+}
+
+#editor.hide {
+  display: none;
+}
+
 #editorTitle {
   position: absolute;
   left:      8px;
@@ -113,6 +121,14 @@ body {
   font-size:   12px;
 
   background-color: white;
+}
+
+#output.full {
+  width:    100%;
+}
+
+#output.hide {
+  display: none;
 }
 
 #outputTitle {
